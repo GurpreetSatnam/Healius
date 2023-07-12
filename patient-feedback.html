@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Healius</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!--bootstarp-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--style-->
+    <!--font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FontAwesome CSS HERE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+</head>
+
+<body class="multi-fontszie">
+    <div id="back-to-top"></div>
+    <!--topbar-->
+    <div class="topbar p-0">
+        <div class="container">
+            <div class="row">
+                <div class="topbar-section-brand">
+                    <div class="left-section second-list">
+                        <ul class="d-flex justify-content-end align-items-center">
+                            <li class="left-section1"> <a href="#">Healius Limited</a></li>
+                            <li>
+                                <a href="#">Patient Feedback
+                                    <span>
+                                        <img src="assets/images/down-chevron.svg" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-section">
+                        <ul class="d-flex justify-content-end align-items-center">
+                            <li id="font_selection_box">
+                                <div class="font_selection_box d-flex align-items-center">
+                                    <a href="#" id="increase">
+                                        <span>
+                                            <img src="assets/images/plus-icon.svg" alt="Increase Text">
+                                        </span>
+                                    </a>
+                                    <a href="#" id="reset">
+                                        <span>
+                                            <img src="assets/images/text.svg" alt="Text">
+                                        </span>
+                                    </a>
+                                    <a href="#" id="decrease">
+                                        <span>
+                                            <img src="assets/images/minus-icon.svg" alt="Decrease Text">
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="description d-flex gap-2 align-items-center heading-b3" onclick="printPage()">
+                                    <span>
+                                        <img src="assets/images/print.svg" alt="Print Page">
+                                    </span>
+                                    Print
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--topbar-finish-->
+
+    <nav class="navbar navbar-expand-lg nav  navbar-section " id="myElement">
+        <div class="container">
+            <div class="navbar-icon d-flex align-items-center gap-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="highlights-btn">
+                    <span class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="assets/images/logo.svg" alt="healius logo">
+                    <img src="assets/images/footer-logo.svg" alt="healius logo" class="white-logo">
+                </a>
+            </div>
+
+            <div class="menu-end d-lg-none d-block">
+                <ul class="d-flex align-items-center">
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="assets/images/search-icon.svg" alt="Search">
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="body-2 d-flex align-items-center heading-b3">
+                            <span>
+                                <img src="assets/images/location-icon.svg" alt="Locations">
+                            </span>
+                            <p class="p-0 m-0">Our locations</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle body-2 heading-b3 " href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                            <span>
+                                <img src="assets/images/down-chevron.svg" alt="About Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="about-us/our-businesses.html">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Our Businesses">
+                                    </span>
+                                    Our Businesses
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="about-us/our-brands.html">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Our Brands">
+                                    </span>
+                                    Our Brands
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="about-us/our-board-members.html">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Our Board Members">
+                                    </span>
+                                    Our Board<br> Members
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Our Executive Leadership Team">
+                                    </span>
+                                    Our Executive <br>Leadership Team
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="about-us/corporate-governance.html">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt=" Corporate Governance">
+                                    </span>
+                                    Corporate <br>Governance
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./about-us/contact-us.html">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Contact Us">
+                                    </span>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle body-2 heading-b3" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Patient Services
+                            <span>
+                                <img src="assets/images/down-chevron.svg" alt=" Patient Services">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt=" Find a service near you">
+                                    </span>
+                                    Find a service<br> near you
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="patient-services/pathology.html">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Pathology">
+                                    </span>
+                                    Pathology
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Imaging">
+                                    </span>
+                                    Imaging
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt=" COVID-19 Testing For Travel">
+                                    </span>
+                                    COVID-19 Testing<br> For Travel
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle body-2 heading-b3" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Invest in Us
+                            <span>
+                                <img src="assets/images/down-chevron.svg" alt="Invest in Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="./invest-in-us/reports/annual-reports.html">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Reports">
+                                    </span>
+                                    Reports
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/agm.svg" alt="AGM">
+                                    </span>
+                                    AGM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/key_dates.svg" alt="Key Dates">
+                                    </span>
+                                    Key Dates
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/media-annoucement.svg" alt="ASX & Media announcements">
+                                    </span>
+                                    ASX & Media <br>announcements
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/results-resentations.svg" alt="Results and Presentations">
+                                    </span>
+                                    Results and <br>Presentations
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/investorsServices.svg" alt="Investor Services">
+                                    </span>
+                                    Investor <br>Services
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="./invest-in-us/acl-takeover-offer.html">
+                                    <span>
+                                        <img src="assets/images/acl-takeoffer.svg" alt=" ACL Takeover Offer">
+                                    </span>
+                                    ACL Takeover <br>Offer</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Working with Us
+                            <span>
+                                <img src="assets/images/down-chevron.svg" alt="Working with Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Healius Employees">
+                                    </span>
+                                    Healius Employees
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="assets/images/reports1.svg" alt="Independent Healthcare Practitioners">
+                                    </span>
+                                    Independent <br>Healthcare Practitioners
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="menu-end d-lg-block d-none">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="assets/images/search-icon.svg" alt="Search">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="body-2 d-flex align-items-center heading-b3">
+                                <span>
+                                    <img src="assets/images/location-icon.svg" alt="Locations">
+                                </span>
+                                Our locations
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section banner-section patient-feedback">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-6 col-lg-6">
+                            <div class="banner-heading mt-n5">
+                                <h1 class="h2-strong heading-b2 mobile-h4-strong">Patient <strong>Feedback</strong> </h1>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-lg-6">
+                            <div class="banner-img">
+                                <img src="assets/images/patient-feedback/feedback.png" alt="Patient Feedback Banner" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="patient-fedback-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="feddback-content text-center d-flex flex-column gap-3">
+                        <p>Healius Limited and our subsidiary companies are committed to listening and responding to feedback from our patients. This enables us to further improve the quality of services we deliver. If you have any feedback you would like to share with us please complete the form below, this will be received via the Healius Patient Feedback email address. Please note that this process can take up to 20 working days depending on the subject matter of your feedback.</p>
+
+                        <div class="pt-2 alternatice-sc">
+                            <h2 class="h5-strong heading-b4 m-0">Alternatively you can write to us at:</h2>
+                            <p class="  m-0">Patient Feedback<br class="mobile"> Level 22, Liberty Place 161 Castlereagh<br class="mobile"> Street Sydney NSW 2000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="patient-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="our-business-heading text-center">
+                        <h2 class="h2-strong heading-b2">Patient <strong>Feedback</strong></h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="patient-form-card">
+                        <form>
+                            <div class="enquiry-form patient-radio">
+                                <div class="input-field">
+                                    <label class="form-label">Title</label>
+                                    <div class="custom_radio" id="title">
+                                        <div class="radio-input">
+                                            <input type="radio" id="featured-1" name="featured" value="mr">
+                                            <label for="featured-1">Mr.</label>
+                                        </div>
+                                        <div class="radio-input">
+                                            <input type="radio" id="featured-2" name="featured" value="mrs">
+                                            <label for="featured-2">Mrs.</label>
+                                        </div>
+                                        <div class="radio-input">
+                                            <input type="radio" id="featured-3" name="featured" value="miss"><label for="featured-3">Miss</label>
+                                        </div>
+                                        <div class="radio-input">
+                                            <input type="radio" id="featured-4" name="featured" value="ms"><label for="featured-4">Ms.</label>
+                                        </div>
+                                        <div class="radio-input">
+                                            <input type="radio" id="featured-5" name="featured" value="dr"><label for="featured-5">Dr.</label>
+                                        </div>
+                                        <div class="radio-input">
+                                            <input type="radio" id="featured-6" name="featured" value="other"><label for="featured-6">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-form">
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="firstname" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstname" placeholder="Placeholder text...">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="surname" class="form-label">Surname</label>
+                                        <input type="text" class="form-control" id="surname" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="address-line-1" class="form-label">Address - Line 1</label>
+                                        <input type="text" class="form-control" id="address-line-1" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="address-line-2" class="form-label">Address - Line 2 (Optional)</label>
+                                        <input type="text" class="form-control" id="address-line-2" placeholder="Placeholder text...">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="suburb" class="form-label">Suburb</label>
+                                        <input type="text" class="form-control" id="suburb" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="state" class="form-label">State</label>
+                                        <select class="form-control form-select" id="state" aria-label="State">
+                                            <option>Select an option...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="postcode" class="form-label">Postcode</label>
+                                        <input type="text" class="form-control" id="postcode" placeholder="Placeholder text...">
+
+                                    </div>
+                                </div>
+
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="phonenumber" class="form-label">Phone number</label>
+                                        <div class="phonenumber">
+                                            <select class="form-control form-select" id="phonenumber" aria-label="Phone number">
+                                                <option>+91</option>
+                                                <option value="1">+ 61</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <input type="text" class="form-control phone" id="phonenumber1" placeholder="Placeholder text...">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="text" class="form-control" id="email" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="feedback" class="form-label">Your Feedback is a</label>
+                                        <select class="form-control form-select" id="feedback" aria-label="Your Feedback is a">
+                                            <option>Select an option...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="receivingservices" class="form-label">Your were receiving services at</label>
+                                        <select class="form-control form-select" id="receivingservices" aria-label="Your were receiving services at">
+                                            <option>Select an option...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="nameofcentre" class="form-label">Name of Centre</label>
+                                        <input type="text" class="form-control" id="nameofcentre" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="dateofvisit" class="form-label">Date of visit</label>
+                                        <input type="date" name="date" class="form-control" id="dateofvisit">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="Suburb" class="form-label">Suburb</label>
+                                        <input type="text" class="form-control" id="Suburb" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="State" class="form-label">State</label>
+                                        <select class="form-control form-select" id="State" aria-label="State">
+                                            <option>Select an option...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="Postcode" class="form-label">Postcode</label>
+                                        <input type="text" class="form-control" id="Postcode" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="Feedback" class="form-label">Feedback</label>
+                                        <input type="text" class="form-control" id="Feedback" placeholder="Placeholder text...">
+                                    </div>
+                                </div>
+
+                                <div class="enquiry-form patient-radio">
+                                    <div class="input-field">
+                                        <label for="contact" class="form-label">Preferred form of contact</label>
+                                        <select class="form-control form-select" id="contact" aria-label="Preferred form of contact">
+                                            <option>Select an option...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="enquiry-form upload-file d-block">
+                                    <label class="form-label">Please use the button below to upload any documents which are relevant</label>
+                                    <div class="upload-btn-wrapper file-upload">
+                                        <input type="file" name="csvfile" id="upload" class="upload-input" onchange="updateFileName()" data-icon="false" data-buttontext="Browse">
+                                        <label for="upload" class="upload-label">Choose File</label>
+                                        <!--                                    <span id="file-name" class="file-name">No file selected</span>-->
+                                        <p class="pt-2 mb-0">Or Drag and Drop here</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="enquiry-form privacy align-items-center">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="html">
+                                        <label for="html">Allow Healius to contact me about my enquiry</label>
+                                    </div>
+                                    <div class="captcha-form">
+                                        <img src="assets/images/contact/captcha.png" alt="captcha">
+                                    </div>
+                                </div>
+
+
+                                <div class="patient-submit-btn">
+                                    <button class="btn btn-primary button-large body-1 heading-b2">Submit Query</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="disclaimer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="our-business-heading text-left">
+                        <h3 class="h2-strong heading-b2"> Disclaimer</h3>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="disclainmer-list">
+                        <ul>
+                            <li>Healius collects the information on this form (Information) to process your feedback/complaint regarding Healius or one of the companies in the Healius group. If Healius does not collect the Information, Healius may not be able to receive or process your feedback/complaint.</li>
+                            <li>Healius may disclose the Information to its related body corporates, but it is not anticipated that your Information will be shared with any entity outside the Healius group nor that it will be disclosed to any overseas recipients.</li>
+                            <li>Our Privacy Policy which is available at: www.healius.com.au contains information about: a. How you can access and seek the correction of information we hold about you; b. How you can complain about a breach of the Australian Privacy Principles (APP) or any registered APP Code that applies to us and how we will deal with such complaints.</li>
+                            <li>If you have any queries in relation to the above, please email our Privacy Officer at privacyofficer@healius.com.au</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section footer-section light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo d-flex align-items-center justify-content-between">
+                        <a href="#">
+                            <img src="assets/images/footer-logo.svg" alt="healius logo">
+                        </a>
+
+                        <div class="backtop">
+                            <a href="#back-to-top" class="text-right d-flex align-items-center gap-2">
+                                <img src="assets/images/back-to-top.svg" alt="back to top">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-content">
+                                <h4>About</h4>
+
+                                <ul>
+                                    <li><a href="./about-us/our-businesses.html" class="body-2">Our Businesses</a></li>
+                                    <li><a href="#" class="body-2">Our Brands</a></li>
+                                    <li><a href="./about-us/our-brands.html" class="body-2">Our Board Members</a></li>
+                                    <li><a href="#" class="body-2">Executive Leadership Team</a></li>
+                                    <li><a href="#" class="body-2">Corporate Governance</a></li>
+                                    <li><a href="about-us/contact-us.html" class="body-2">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="footer-content patient-services">
+                                <h4>Patient Services</h4>
+
+                                <ul>
+                                    <li><a href="#" class="body-2">Our Locations</a></li>
+                                    <li><a href="./patient-services/pathology.html" class="body-2">Pathology</a></li>
+                                    <li><a href="#" class="body-2">Imaging</a></li>
+                                    <li><a href="#" class="body-2">Covid-19 Travel Testing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="footer-content quick-services">
+                                <h4>Quick Links</h4>
+
+                                <ul>
+                                    <li><a href="#" class="body-2">Invest in Us</a></li>
+                                    <li><a href="#" class="body-2">Working With Us</a></li>
+                                    <li><a href="patient-feedback.html" class="body-2">Patient Feedback</a></li>
+                                    <li><a href="#" class="body-2">Contractor Induction</a></li>
+                                    <li><a href="#" class="body-2">LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="footer-privacy">
+                            <ul>
+                                <li><a href="#" class="description copy">© 2023 Healius Limited</a></li>
+                                <li><a href="#" class="description"> Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="backtop">
+                            <a href="#back-to-top" class="text-right d-flex align-items-center gap-2">
+                                <h4 class="description text-white mb-0">Back to top</h4>
+                                <img src="assets/images/back-to-top.svg" alt="back to top">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

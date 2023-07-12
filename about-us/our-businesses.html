@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Healius</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <!--bootstarp-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--style-->
+    <!--font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FontAwesome CSS HERE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--jquery-->
+    <script src="../assets/js/jquery.min.js"></script>
+</head>
+
+<body class="multi-fontszie">
+    <div id="back-to-top"></div>
+    <!--topbar-->
+    <div class="topbar p-0">
+        <div class="container">
+            <div class="row">
+                <div class="topbar-section-brand">
+                    <div class="left-section">
+                        <ul class="d-flex justify-content-end align-items-center">
+                           <li class="left-section1"> <a href="#">Healius Limited</a></li>
+                           <li class="left-section2">
+                                <a href="#">
+                                    About Us
+                                    <span>
+                                        <img src="../assets/images/down-chevron.svg" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                           <li class="left-section3">
+                                <a href="#">Our Business
+                                    <span>
+                                        <img src="../assets/images/down-chevron.svg" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-section">
+                        <ul class="d-flex justify-content-end align-items-center">
+                            <li id="font_selection_box">
+                                <div class="font_selection_box d-flex align-items-center">
+                                    <a href="#" id="increase">
+                                        <span>
+                                            <img src="../assets/images/plus-icon.svg" alt="Increase Text">
+                                        </span>
+                                    </a>
+                                    <a href="#" id="reset">
+                                        <span>
+                                            <img src="../assets/images/text.svg" alt="Text">
+                                        </span>
+                                    </a>
+                                    <a href="#" id="decrease">
+                                        <span>
+                                            <img src="../assets/images/minus-icon.svg" alt="Decrease Text">
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="description d-flex gap-2 align-items-center heading-b3" onclick="printPage()">
+                                    <span>
+                                        <img src="../assets/images/print.svg" alt="Print Page">
+                                    </span>
+                                    Print
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--topbar-finish-->
+
+   <nav class="navbar navbar-expand-lg nav  navbar-section " id="myElement">
+        <div class="container">
+            <div class="navbar-icon d-flex align-items-center gap-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="highlights-btn">
+                    <span class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img src="../assets/images/logo.svg" alt="healius logo">
+                    <img src="../assets/images/footer-logo.svg" alt="healius logo" class="white-logo">
+                </a>
+            </div>
+
+            <div class="menu-end d-lg-none d-block">
+                <ul class="d-flex align-items-center">
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="../assets/images/search-icon.svg" alt="Search">
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="body-2 d-flex align-items-center heading-b3">
+                            <span>
+                                <img src="../assets/images/location-icon.svg" alt="Locations">
+                            </span>
+                            <p class="p-0 m-0">Our locations</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active  dropdown-toggle body-2 heading-b3 " href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt="About Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="./our-businesses.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Businesses">
+                                    </span>
+                                    Our Businesses
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="our-brands.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Brands">
+                                    </span>
+                                    Our Brands
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="our-board-members.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Board Members">
+                                    </span>
+                                    Our Board<br> Members
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Executive Leadership Team">
+                                    </span>
+                                    Our Executive <br>Leadership Team
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="corporate-governance.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt=" Corporate Governance">
+                                    </span>
+                                    Corporate <br>Governance
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contact-us.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Contact Us">
+                                    </span>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle body-2 heading-b3" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Patient Services
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt=" Patient Services">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt=" Find a service near you">
+                                    </span>
+                                    Find a service<br> near you
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="../patient-services/pathology.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Pathology">
+                                    </span>
+                                    Pathology
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Imaging">
+                                    </span>
+                                    Imaging
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt=" COVID-19 Testing For Travel">
+                                    </span>
+                                    COVID-19 Testing<br> For Travel
+                                </a></li>
+                        </ul>
+                    </li>
+
+                   <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle body-2 heading-b3" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Invest in Us
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt="Invest in Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="../invest-in-us/reports/annual-reports.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Reports">
+                                    </span>
+                                    Reports
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/agm.svg" alt="AGM">
+                                    </span>
+                                    AGM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/key_dates.svg" alt="Key Dates">
+                                    </span>
+                                    Key Dates
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/media-annoucement.svg" alt="ASX & Media announcements">
+                                    </span>
+                                    ASX & Media <br>announcements
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/results-resentations.svg" alt="Results and Presentations">
+                                    </span>
+                                    Results and <br>Presentations
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/investorsServices.svg" alt="Investor Services">
+                                    </span>
+                                    Investor <br>Services
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="../invest-in-us/acl-takeover-offer.html">
+                                    <span>
+                                        <img src="../assets/images/acl-takeoffer.svg" alt=" ACL Takeover Offer">
+                                    </span>
+                                    ACL Takeover <br>Offer</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Working with Us
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt="Working with Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Healius Employees">
+                                    </span>
+                                    Healius Employees
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Independent Healthcare Practitioners">
+                                    </span>
+                                     Independent <br>Healthcare Practitioners
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="menu-end d-lg-block d-none">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="../assets/images/search-icon.svg" alt="Search">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="body-2 d-flex align-items-center heading-b3">
+                                <span>
+                                    <img src="../assets/images/location-icon.svg" alt="Locations">
+                                </span>
+                                Our locations
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section banner-section about_us">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-6 col-lg-6">
+                            <div class="banner-heading mt-n5">
+                                <h1 class="h2-strong heading-b2 mobile-h4-strong">Our <strong>Businesses</strong> </h1>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-lg-6">
+                            <div class="banner-img">
+                                <img src="../assets/images/our-business/our-business3.png" alt="Our Businesses" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about-pathology">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pathology-image">
+                        <img src="../assets/images/our-business/pathology-img.png" alt="Pathology">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="pathology-content">
+                        <div class="our-business-heading text-left pb-3">
+                            <h2 class="h2-strong heading-b2 m-0">Pathology</h2>
+                        </div>
+                        <p>Pathology is a medical specialty that focuses on determining the cause and nature of diseases and is integral to the health of all Australians. In fact, 70% of all medical decisions and 100% of cancer diagnoses rely on a pathology test. Healius’ mission in pathology is to deliver accurate and timely diagnostic services Australia-wide.</p>
+                        <a href="#" class="btn btn-primary button-large heading-b3" role="button" aria-label="View all Reports">Know More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section about-diagnostic-imaging">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="diagnostic-content">
+                        <div class="our-business-heading text-left pb-3">
+                            <h3 class="h2-strong heading-b2 m-0"><strong>Diagnostic</strong> Imaging</h3>
+                        </div>
+                        <p>Advancements in diagnostic imaging are opening up new realms of possibilities for detecting and treating disease. Lumus Imaging employs the latest technologies to provide affordable, accessible and quality imaging for all patients.</p>
+
+                        <a href="#" class="btn btn-primary button-large heading-b3" role="button" aria-label="View all Reports">Know More</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="diagnostic-image">
+                        <img src="../assets/images/our-business/diagnostic-imaging.png" alt="Diagnostic Imaging">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section our-network">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="our-business-heading text-center">
+                        <h3 class="h2-strong heading-b2">Our <strong>Network</strong></h3>
+                    </div>
+                </div>
+
+                <div class="our-network-card">
+                    <div class="pathology-cards">
+                        <div class="cards-pink">
+                            <img src="../assets/images/our-business/pathology-sites.svg" alt="Pathology Sites">
+                            <div class="pt-4">
+                                <h4 class="m-0 text-white h4-strong">2,158</h4>
+                                <p class="m-0">Pathology Sites</p>
+                            </div>
+                        </div>
+                        <div class="cards-content">
+                            <div class="pathology-card-co">
+                                <h4 class="m-0">2,063</h4>
+                                <p>Approved Collection Centers</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="pathology-card-co pt-4">
+                                <h4 class="m-0">95</h4>
+                                <p class="m-0">Laboratories</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pathology-cards">
+                        <div class="cards-pink">
+                            <img src="../assets/images/our-business/imaging-Sites.svg" alt="Hospitals">
+                            <div class="pt-4">
+                                <h4 class="m-0 text-white h4-strong">35</h4>
+                                <p class="m-0">Hospitals</p>
+                            </div>
+                        </div>
+                        <div class="cards-content">
+                            <div class="pathology-card-co d-flex gap-4 path-hospital">
+                                <div class="">
+                                    <h4  class="m-0">35</h4>
+                                    <p class="heading-b3">Hospitals</p>
+                                </div>
+                                <div class="">
+                                    <h4  class="m-0">50</h4>
+                                    <p>Medical Centers</p>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="pathology-card-co pt-4">
+                                <h4 class="m-0">64</h4>
+                                <p class="m-0">Community Centers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-map mx-auto text-center">
+                    <img src="../assets/images/our-business/Map.png" alt="map" class="desktop-map">
+                    <img src="../assets/images/our-business/map2.png" alt="Healius map" class="mobile-map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <footer class="section footer-section light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo d-flex align-items-center justify-content-between">
+                        <a href="#">
+                            <img src="../assets/images/footer-logo.svg" alt="healius logo">
+                        </a>
+
+                        <div class="backtop">
+                            <a href="#back-to-top" class="text-right d-flex align-items-center gap-2">
+                                <img src="../assets/images/back-to-top.svg" alt="back to top">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-content">
+                                <h4>About</h4>
+
+                                <ul>
+                                    <li><a href="./our-businesses.html" class="body-2">Our Businesses</a></li>
+                                    <li><a href="our-brands.html" class="body-2">Our Brands</a></li>
+                                    <li><a href="our-board-members.html" class="body-2">Our Board Members</a></li>
+                                    <li><a href="#" class="body-2">Executive Leadership Team</a></li>
+                                    <li><a href="#" class="body-2">Corporate Governance</a></li>
+                                    <li><a href="contact-us.html" class="body-2">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="footer-content patient-services">
+                                <h4>Patient Services</h4>
+
+                                <ul>
+                                    <li><a href="#" class="body-2">Our Locations</a></li>
+                                    <li><a href="../patient-services/pathology.html" class="body-2">Pathology</a></li>
+                                    <li><a href="#" class="body-2">Imaging</a></li>
+                                    <li><a href="#" class="body-2">Covid-19 Travel Testing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="footer-content quick-services">
+                                <h4>Quick Links</h4>
+
+                                <ul>
+                                    <li><a href="#" class="body-2">Invest in Us</a></li>
+                                    <li><a href="#" class="body-2">Working With Us</a></li>
+                                    <li><a href="../patient-feedback.html" class="body-2">Patient Feedback</a></li>
+                                    <li><a href="#" class="body-2">Contractor Induction</a></li>
+                                    <li><a href="#" class="body-2">LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="footer-privacy">
+                            <ul>
+                                <li><a href="#" class="description copy">© 2023 Healius Limited</a></li>
+                                <li><a href="#" class="description"> Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="backtop">
+                            <a href="#back-to-top" class="text-right d-flex align-items-center gap-2">
+                                <h4 class="description text-white mb-0">Back to top</h4>
+                                <img src="../assets/images/back-to-top.svg" alt="back to top">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

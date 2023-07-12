@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Healius</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <!--bootstarp-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--style-->
+    <!--font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FontAwesome CSS HERE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--jquery-->
+    <script src="../assets/js/jquery.min.js"></script>
+</head>
+
+<body class="multi-fontszie">
+    <div id="back-to-top"></div>
+    <!--topbar-->
+    <div class="topbar p-0">
+        <div class="container">
+            <div class="row">
+                <div class="topbar-section-brand">
+                    <div class="left-section mutli-member">
+                        <ul class="d-flex justify-content-end align-items-center">
+                            <li class="left-section1">
+                                <a href="#">Healius Limited</a>
+                            </li>
+                            <li class="left-section2">
+                                <a href="#">
+                                    Invest In Us
+                                    <span>
+                                        <img src="../assets/images/down-chevron.svg" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">ACL Takeover Offer
+                                    <span>
+                                        <img src="../assets/images/down-chevron.svg" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-section">
+                        <ul class="d-flex justify-content-end align-items-center">
+                            <li id="font_selection_box">
+                                <div class="font_selection_box d-flex align-items-center">
+                                    <a href="#" id="increase">
+                                        <span>
+                                            <img src="../assets/images/plus-icon.svg" alt="Increase Text">
+                                        </span>
+                                    </a>
+                                    <a href="#" id="reset">
+                                        <span>
+                                            <img src="../assets/images/text.svg" alt="Text">
+                                        </span>
+                                    </a>
+                                    <a href="#" id="decrease">
+                                        <span>
+                                            <img src="../assets/images/minus-icon.svg" alt="Decrease Text">
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="description d-flex gap-2 align-items-center heading-b3" onclick="printPage()">
+                                    <span>
+                                        <img src="../assets/images/print.svg" alt="Print Page">
+                                    </span>
+                                    Print
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--topbar-finish-->
+
+    <nav class="navbar navbar-expand-lg nav  navbar-section " id="myElement">
+        <div class="container">
+            <div class="navbar-icon d-flex align-items-center gap-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="highlights-btn">
+                    <span class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img src="../assets/images/logo.svg" alt="healius logo">
+                    <img src="../assets/images/footer-logo.svg" alt="healius logo" class="white-logo">
+                </a>
+            </div>
+
+            <div class="menu-end d-lg-none d-block">
+                <ul class="d-flex align-items-center">
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="../assets/images/search-icon.svg" alt="Search">
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="body-2 d-flex align-items-center heading-b3">
+                            <span>
+                                <img src="../assets/images/location-icon.svg" alt="Locations">
+                            </span>
+                            <p class="p-0 m-0">Our locations</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle body-2 heading-b3 " href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt="About Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="../about-us/our-businesses.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Businesses">
+                                    </span>
+                                    Our Businesses
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../about-us/our-brands.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Brands">
+                                    </span>
+                                    Our Brands
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../about-us/our-board-members.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Board Members">
+                                    </span>
+                                    Our Board<br> Members
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Our Executive Leadership Team">
+                                    </span>
+                                    Our Executive <br>Leadership Team
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../about-us/corporate-governance.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt=" Corporate Governance">
+                                    </span>
+                                    Corporate <br>Governance
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../about-us/contact-us.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Contact Us">
+                                    </span>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle body-2 heading-b3" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Patient Services
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt=" Patient Services">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt=" Find a service near you">
+                                    </span>
+                                    Find a service<br> near you
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="../patient-services/pathology.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Pathology">
+                                    </span>
+                                    Pathology
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Imaging">
+                                    </span>
+                                    Imaging
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt=" COVID-19 Testing For Travel">
+                                    </span>
+                                    COVID-19 Testing<br> For Travel
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle body-2 heading-b3" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Invest in Us
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt="Invest in Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item heading-b3" href="../invest-in-us/reports/annual-reports.html">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Reports">
+                                    </span>
+                                    Reports
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/agm.svg" alt="AGM">
+                                    </span>
+                                    AGM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/key_dates.svg" alt="Key Dates">
+                                    </span>
+                                    Key Dates
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/media-annoucement.svg" alt="ASX & Media announcements">
+                                    </span>
+                                    ASX & Media <br>announcements
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/results-resentations.svg" alt="Results and Presentations">
+                                    </span>
+                                    Results and <br>Presentations
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/investorsServices.svg" alt="Investor Services">
+                                    </span>
+                                    Investor <br>Services
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item heading-b3" href="../invest-in-us/acl-takeover-offer.html">
+                                    <span>
+                                        <img src="../assets/images/acl-takeoffer.svg" alt=" ACL Takeover Offer">
+                                    </span>
+                                    ACL Takeover <br>Offer</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Working with Us
+                            <span>
+                                <img src="../assets/images/down-chevron.svg" alt="Working with Us">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Healius Employees">
+                                    </span>
+                                    Healius Employees
+                                </a></li>
+                            <li><a class="dropdown-item heading-b3" href="#">
+                                    <span>
+                                        <img src="../assets/images/reports1.svg" alt="Independent Healthcare Practitioners">
+                                    </span>
+                                    Independent <br>Healthcare Practitioners
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="menu-end d-lg-block d-none">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="../assets/images/search-icon.svg" alt="Search">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="body-2 d-flex align-items-center heading-b3">
+                                <span>
+                                    <img src="../assets/images/location-icon.svg" alt="Locations">
+                                </span>
+                                Our locations
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="section banner-section takeover-banner">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-6 col-lg-6">
+                            <div class="banner-heading mt-n5">
+                                <h1 class="h2-strong heading-b2 mobile-h4-strong">ACL <br class="mobile"><strong>Takeover Offer</strong> </h1>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-lg-6">
+                            <div class="banner-img">
+                                <img src="../assets/images/faq/acl-takeover-offer.png" alt="ACL Takeover Offer Bannner" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="faq-accordion acl-offer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4" id="section3">
+                    <div class="fixed-heading">
+                        <!--desktop-menu-->
+                        <div class="sidebar-navbar desktop-menu">
+                            <ul id="myList">
+                                <li class="activebtn">
+                                    <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">Reports
+                                        <span>
+                                            <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                        </span>
+                                    </a>
+                                    <ul class="">
+                                        <li><a href="./reports/annual-reports.html">Annual Reports</a></li>
+                                        <li><a href="#">Tax Transparency Reports</a></li>
+                                        <li><a href="#">Sustainability Reports</a></li>
+                                        <li><a href="#">Modern Slavery Statements</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="">
+                                    <a href="javascript:void(0)" class="dropdown1">AGM</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)" class="dropdown1">Key Dates</a>
+                                </li>
+                                <li class="activebtn">
+                                    <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">ASX & Media announcements
+                                        <span>
+                                            <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                        </span>
+                                    </a>
+                                    <ul class="">
+                                        <li><a href="#">ASX Announcements</a></li>
+                                        <li><a href="#">Media Releases</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="activebtn">
+                                    <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">Results and Presentations
+                                        <span>
+                                            <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                        </span>
+                                    </a>
+                                    <ul class="">
+                                        <li><a href="#">Financial results</a></li>
+                                        <li><a href="#">Webcasts</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="activebtn">
+                                    <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">Investor Services
+                                        <span>
+                                            <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                        </span>
+                                    </a>
+                                    <ul class="">
+                                        <li><a href="#">Share Registry</a></li>
+                                        <li><a href="./investor-services/faq/faq.html" class="d-block w-100">FAQs</a></li>
+                                        <li><a href="../about-us/contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="">
+                                    <a href="./acl-takeover-offer.html" class="dropdown1">ACL Takeover Offer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--close-desktop-menu-->
+
+                        <!--mobile-menu-->
+                        <div class="mobile-navbar">
+                            <div class="navbar-reports">
+                                <ul>
+                                    <li class="activebtn">
+                                        <a href="./reports/annual-reports.html" class="dropdown1 d-flex justify-content-between align-items-center">Reports
+                                            <span>
+                                                <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">AGM
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">Key Dates
+                                        </a>
+                                    </li>
+
+                                    <li class="activebtn">
+                                        <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">ASX & Media announcements
+                                            <span>
+                                                <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="activebtn">
+                                        <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">Results and Presentations
+                                            <span>
+                                                <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="activebtn">
+                                        <a href="javascript:void(0)" class="dropdown1 d-flex justify-content-between align-items-center">Investor Services
+                                            <span>
+                                                <img src="../assets/images/patient-feedback/chevron-down.svg" alt="Reports dropdown">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./acl-takeover-offer.html" class="dropdown1 d-flex justify-content-between align-items-center">ACL Takeover Offer
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!--close-mobile-menu-->
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8">
+                    <div class="faq-accordion-card takecare-offers">
+                        <div class="acl-report-content">
+                            <div class="report-content">
+                                <div class="our-business-heading text-left">
+                                    <h2 class="h3-strong heading-b2">Information for Stakeholders <span>–</span> <strong>Australian Clinical Labs’ </strong> Takeover Offer for Healius Limited</h2>
+                                </div>
+                                <p>Healius Target’s Statement in response to Australian Clinical Labs’ takeover offer</p>
+                                <div class="info-btn">
+                                    <a href="#" tabindex="-1" role="button" class="btn btn-primary button-large">Download Target’s Statement
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="reports-paragraph">
+                                <p>On 20 March 2023, Healius Limited (Healius) received an unsolicited conditional takeover offer from Australian Clinical Labs Limited (ACL) to acquire 100% of the shares in Healius for scrip consideration of 0.74 ACL Shares for every 1 Healius Share (the Offer).</p>
+
+                                <p>Healius Target’s Statement sets out the Healius Board’s recommendation in respect of the Offer and other information that is material to Healius shareholders in deciding whether or not to accept the Offer (Target’s Statement). Healius shareholders are encouraged to read the Target’s Statement in its entirety before making a decision as to whether or not to accept the Offer for their Healius shares.</p>
+
+                                <p>Healius shareholders may also request a hard copy of the Target’s Statement be sent to them (if in Australia, by pre-paid ordinary post, or if outside Australia, by pre-paid airmail post) by contacting the Healius Shareholder Information Line on 1300 103 401 (if in Australia) or +61 2 9066 4063 (if outside Australia) Monday to Friday between 9.00am to 5.00pm (Sydney time).</p>
+                            </div>
+                        </div>
+
+                        <div class="reject-offer">
+                            <div class="our-business-heading text-left">
+                                <h3 class="h3-strong heading-b2">Board recommendation: <strong>Reject the Offer </strong></h3>
+                            </div>
+                            <p>The Healius Board unanimously recommends Healius Shareholders REJECT the Offer, DO NOTHING and TAKE NO ACTION in relation to all documents received from Australian Clinical Labs Limited.</p>
+
+                            <div class="rejectoffer-btn">
+                                <a href="#" tabindex="-1" role="button" class="btn btn-primary button-large">
+                                    ASX Announcements <br class="mobile">relating to the Offer
+                                </a>
+
+
+                                <a href="#" tabindex="-1" role="button" class="btn btn-primary button-large">
+                                    FAQ Relating to the offer
+                                </a>
+                            </div>
+                        </div>
+                        <div id="section6"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="acl-contact pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-content">
+                        <div class="our-business-heading text-left">
+                            <h3 class="h3-strong heading-b2">Contact <strong>Us</strong></h3>
+                        </div>
+                        <p>If you have any questions, or would like further information, about matters relating to the takeover offer for your Healius shares, please contact the Healius Shareholder Information Line:</p>
+
+                        <div class="number-content pb-2">
+                            <h3 class="d-flex">
+                                <img src="../assets/images/contact/phone.svg" alt="phone">
+                                <a href="#">1300 103 401<br class="mobile"> (within Australia)
+                                </a>
+                            </h3>
+                            <h3 class="d-flex">
+                                <img src="../assets/images/contact/phone.svg" alt="phone">
+                                <a href="#">+61 2 9066 4063<br class="mobile"> (outside Australia)
+                                </a>
+                            </h3>
+                        </div>
+
+                        <p>Lines are open Monday to Friday between 9.00am to 5.00pm (AEST) excluding public holidays.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-img">
+                        <img src="../assets/images/faq/customer_care.png" alt="customer care">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="section footer-section light-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo d-flex align-items-center justify-content-between">
+                        <a href="#">
+                            <img src="../assets/images/footer-logo.svg" alt="healius logo">
+                        </a>
+
+                        <div class="backtop">
+                            <a href="#back-to-top" class="text-right d-flex align-items-center gap-2">
+                                <img src="../assets/images/back-to-top.svg" alt="back to top">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-content">
+                                <h4>About</h4>
+
+                                <ul>
+                                    <li><a href="../about-us/our-businesses.html" class="body-2">Our Businesses</a></li>
+                                    <li><a href="../about-us/our-brands.html" class="body-2">Our Brands</a></li>
+                                    <li><a href="../about-us/our-board-members.html" class="body-2">Our Board Members</a></li>
+                                    <li><a href="#" class="body-2">Executive Leadership Team</a></li>
+                                    <li><a href="#" class="body-2">Corporate Governance</a></li>
+                                    <li><a href="../about-us/contact-us.html" class="body-2">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="footer-content patient-services">
+                                <h4>Patient Services</h4>
+
+                                <ul>
+                                    <li><a href="#" class="body-2">Our Locations</a></li>
+                                    <li><a href="../patient-services/pathology.html" class="body-2">Pathology</a></li>
+                                    <li><a href="#" class="body-2">Imaging</a></li>
+                                    <li><a href="#" class="body-2">Covid-19 Travel Testing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="footer-content quick-services">
+                                <h4>Quick Links</h4>
+
+                                <ul>
+                                    <li><a href="#" class="body-2">Invest in Us</a></li>
+                                    <li><a href="#" class="body-2">Working With Us</a></li>
+                                    <li><a href="..//patient-feedback.html" class="body-2">Patient Feedback</a></li>
+                                    <li><a href="#" class="body-2">Contractor Induction</a></li>
+                                    <li><a href="#" class="body-2">LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="footer-privacy">
+                            <ul>
+                                <li><a href="#" class="description copy">© 2023 Healius Limited</a></li>
+                                <li><a href="#" class="description"> Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="backtop">
+                            <a href="#back-to-top" class="text-right d-flex align-items-center gap-2">
+                                <h4 class="description text-white mb-0">Back to top</h4>
+                                <img src="../assets/images/back-to-top.svg" alt="back to top">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+
+    <script>
+        const myElement = document.getElementById('myElement');
+        // Listen for the scroll event
+        window.addEventListener('scroll', function() {
+            // Check if the scroll position is greater than a certain value (e.g., 100 pixels)
+            if (window.scrollY > 0) {
+                // Add the class
+                myElement.classList.add('scrolled');
+            } else {
+                // Remove the class
+                myElement.classList.remove('scrolled');
+            }
+        });
+
+        //sidebar-dropdown
+        const boxes = document.querySelectorAll(".activebtn");
+
+        boxes.forEach((box) => {
+            box.onclick = function() {
+                boxes.forEach((b) => {
+                    b.classList.remove("active");
+                });
+                box.classList.add("active");
+            };
+        });
+
+    </script>
+
+</body>
+
+</html>
